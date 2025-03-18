@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspan - Online Coding School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Modern Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            --primary: #2A5C82;
+            --secondary: #27AE60;
+            --light: #F8F9FA;
+            --text: #2C3E50;
+        }
+
+        body {
+            background: var(--light);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* Header Section */
+        .hero {
+            text-align: center;
+            padding: 6rem 2rem 4rem;
+            background: linear-gradient(135deg, var(--primary), #1F456E);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            bottom: -50px;
+            left: -10%;
+            width: 120%;
+            height: 100px;
+            background: var(--light);
+            transform: rotate(-3deg);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Course Section */
+        .course-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .course-image {
+            height: 200px;
+            background: #ddd;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .course-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .course-content {
+            padding: 1.5rem;
+        }
+
+        .course-content h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .course-content p {
+            font-size: 1rem;
+            color: var(--text);
+        }
+
+        .course-button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .course-button:hover {
+            background: var(--secondary);
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 4rem 2rem;
+            background: white;
+        }
+
+        .about-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 2rem;
+        }
+
+        .about-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Footer Section */
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .course-section, .about-section {
+                padding: 3rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Aspan Online Coding School</h1>
+        <p>Empowering the next generation of coders with practical, interactive, and hands-on learning.</p>
+    </header>
+
+    <!-- Course Section -->
+    <section class="course-section">
+        <h2 style="text-align: center; font-size: 2rem; color: var(--primary);">Our Courses</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="https://via.placeholder.com/400x200" alt="Python Course">
+                </div>
+                <div class="course-content">
+                    <h3>Introduction to Programming with Python</h3>
+                    <p>Learn the basics of programming with Python, designed specifically for teenagers. This course emphasizes practical, hands-on learning.</p>
+                    <a href="#" class="course-button">Enroll Now</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="https://via.placeholder.com/400x200" alt="Web Development Course">
+                </div>
+                <div class="course-content">
+                    <h3>Web Development (Coming Soon)</h3>
+                    <p>Explore the world of web development with HTML, CSS, and JavaScript. Build interactive and responsive websites.</p>
+                    <a href="#" class="course-button">Notify Me</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="https://via.placeholder.com/400x200" alt="UX/UI Design Course">
+                </div>
+                <div class="course-content">
+                    <h3>UX/UI Design (Coming Soon)</h3>
+                    <p>Master the art of designing user-friendly interfaces and create engaging user experiences.</p>
+                    <a href="#" class="course-button">Notify Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h2>About Aspan</h2>
+        <p>Aspan is a next-generation online coding school catered for teenagers in Kazakhstan. Our courses emphasize practical, interactive, and hands-on learning, guided by expert instructors. Join us to explore the world of coding and technology!</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Aspan Online Coding School. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a>
+        </p>
+    </footer>
+</body>
+</html>
