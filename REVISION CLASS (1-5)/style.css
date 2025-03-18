@@ -1,0 +1,14 @@
+body{
+    background-color: aqua;
+}
+h1{
+    align-items: center;
+    color: blue;
+}
+img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
